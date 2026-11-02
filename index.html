@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Author: Adam Smithhisler
+        Date: 11/1/2026
+        Purpose: SDC260 Assignment 4.5 - Storing Locally.
+        Create an interactive glassworks storefront using
+        JavaScript, localStorage, inventory tracking,
+        and a 15-minute shopping cart reservation timer.
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Molten Dreams Glassworks</title>
+
+    <!-- STEP 1 - LINK EXTERNAL FILES -->
+    <link rel="stylesheet" href="GP_Storing-Locally_StarterFile.css">
+    <script src="GP_Storing-Locally_StarterFile.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- =========================================
+         HEADER
+    ========================================= -->
+
+    <header>
+        <nav>
+
+            <h1>Molten Dreams Glassworks</h1>
+
+            <!-- Cart Reservation Timer -->
+            <section class="timer-section" aria-live="polite" style="display: none;">
+                <h3>Cart Reservation Timer</h3>
+                <p id="countdown">15:00</p>
+            </section>
+
+            <!-- Shopping Cart Navigation -->
+            <div
+                id="cart-button"
+                class="cart-area"
+                role="button"
+                tabindex="0"
+                aria-label="View shopping cart"
+            >
+                <span id="cart-count">0</span>
+                <span>View Cart</span>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================= -->
+
+    <main>
+
+        <!-- =========================================
+             HERO SECTION
+        ========================================= -->
+
+        <section class="hero">
+
+            <div class="hero-overlay">
+
+                <h2>
+                    Handcrafted Glass Art Inspired by Fire and Light
+                </h2>
+
+                <p>
+                    Explore artisan glass sculptures, ornaments,
+                    and decorative pieces created through
+                    traditional glassblowing techniques.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- =========================================
+             PRODUCT SECTION
+        ========================================= -->
+
+        <section class="products-section">
+
+            <h2>Featured Creations</h2>
+
+            <!-- Products Generated Through JavaScript -->
+            <section class="product-grid" id="product-grid">
+
+                <!--
+                    JavaScript automatically displays
+                    all nine glass products here.
+
+                    Each product includes:
+                    - Product image
+                    - Product name
+                    - Description
+                    - Price
+                    - Available stock
+                    - Add to Cart button
+                -->
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- =========================================
+         ADD TO CART NOTIFICATION
+    ========================================= -->
+
+    <section
+        id="notification"
+        class="notification"
+        role="status"
+        aria-live="polite"
+    >
+        Item added to cart!
+    </section>
+
+    <!-- =========================================
+         FOOTER
+    ========================================= -->
+
+    <footer>
+
+        <p>Molten Dreams Glassworks &copy; 2026</p>
+
+        <p>Glassmaker: ADASMI6974</p>
+
+    </footer>
+
+</body>
+
+</html>
